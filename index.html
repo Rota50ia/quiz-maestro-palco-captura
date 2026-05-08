@@ -849,19 +849,19 @@
                 
                 <div class="types-grid">
                     <div class="type-item tipo-d">
-                        <strong>🔴 CONQUISTADORES</strong><br>
+                        <strong>🔴 CONQUISTADOR<span style="background: #DC2626; color: white; padding: 2px 4px; border-radius: 4px; font-weight: 900;">D</span>ORES</strong><br>
                         Dominam através da velocidade e competição
                     </div>
                     <div class="type-item tipo-i">
-                        <strong>🟠 CONECTADOS</strong><br>
+                        <strong>🟠 CONECTA<span style="background: #EA580C; color: white; padding: 2px 4px; border-radius: 4px; font-weight: 900;">I</span>DOS</strong><br>
                         Inspiram através da autenticidade e relacionamentos
                     </div>
                     <div class="type-item tipo-s">
-                        <strong>🟡 CONSTRUTORES</strong><br>
+                        <strong>🟡 CON<span style="background: #FACC15; color: #1A1C1E; padding: 2px 4px; border-radius: 4px; font-weight: 900;">S</span>TRUTORES</strong><br>
                         Prosperam através da estabilidade e consistência
                     </div>
                     <div class="type-item tipo-c">
-                        <strong>🔵 ESTRATEGISTAS</strong><br>
+                        <strong>🔵 ESTRATEGISTAS<span style="background: #3B82F6; color: white; padding: 2px 4px; border-radius: 4px; font-weight: 900; margin-left: 2px;">C</span></strong><br>
                         Vencem através de metodologia e competência
                     </div>
                 </div>
@@ -1000,7 +1000,7 @@
         <!-- Result D -->
         <div class="quiz-screen result tipo-d" id="result-D">
             <div class="result-icon">🔴</div>
-            <h2 class="result-title">Você é um CONQUISTADOR Musical!</h2>
+            <h2 class="result-title">Você é um CONQUISTADOR<span style="background: #DC2626; color: white; padding: 2px 6px; border-radius: 4px; font-weight: 900; margin-left: 4px;">D</span> Musical!</h2>
             
             <div class="result-description">
                 <p><strong>Confirmado:</strong> você tem o perfil de músico que não aceita ser medíocre.</p>
@@ -1029,7 +1029,7 @@
         <!-- Result I -->
         <div class="quiz-screen result tipo-i" id="result-I">
             <div class="result-icon">🟠</div>
-            <h2 class="result-title">Você é um músico CONECTADO!</h2>
+            <h2 class="result-title">Você é um CONECTA<span style="background: #EA580C; color: white; padding: 2px 6px; border-radius: 4px; font-weight: 900;">I</span>DO Musical!</h2>
             
             <div class="result-description">
                 <p><strong>Lindo!</strong> Você tem o dom mais raro no mundo musical: criar CONEXÃO verdadeira.</p>
@@ -1060,7 +1060,7 @@
         <!-- Result S -->
         <div class="quiz-screen result tipo-s" id="result-S">
             <div class="result-icon">🟡</div>
-            <h2 class="result-title">Você é um CONSTRUTOR Musical!</h2>
+            <h2 class="result-title">Você é um CON<span style="background: #FACC15; color: #1A1C1E; padding: 2px 6px; border-radius: 4px; font-weight: 900;">S</span>TRUTOR Musical!</h2>
             
             <div class="result-description">
                 <p><strong>Admirável!</strong> Você tem a mentalidade mais sábia do mundo musical: pensar em LEGADO.</p>
@@ -1091,7 +1091,7 @@
         <!-- Result C -->
         <div class="quiz-screen result tipo-c" id="result-C">
             <div class="result-icon">🔵</div>
-            <h2 class="result-title">Você é um ESTRATEGISTA Musical!</h2>
+            <h2 class="result-title">Você é um ESTRATEGISTA<span style="background: #3B82F6; color: white; padding: 2px 6px; border-radius: 4px; font-weight: 900; margin-left: 4px;">C</span> Musical!</h2>
             
             <div class="result-description">
                 <p><strong>Impressionante!</strong> Você tem a mente mais analítica do mundo musical: foco total em COMPETÊNCIA.</p>
@@ -1332,10 +1332,10 @@
             
             // Redirect to specific landing page based on type
             const redirectUrls = {
-                'conquistador': '../06-LANDING-PAGES/landing-conquistador-maestro.html',
-                'conectado': '../06-LANDING-PAGES/landing-conectado-maestro.html', 
-                'construtor': '../06-LANDING-PAGES/landing-construtor-maestro.html',
-                'estrategista': '../06-LANDING-PAGES/landing-estrategista.html'
+                'conquistador': './ebooks/conquistador.html',
+                'conectado': './ebooks/conectado.html', 
+                'construtor': './ebooks/construtor.html',
+                'estrategista': './ebooks/estrategista.html'
             };
             
             const url = redirectUrls[type];
@@ -1343,7 +1343,7 @@
                 window.location.href = url;
             } else {
                 // Fallback para página principal
-                window.location.href = '../06-LANDING-PAGES/landing-conquistador-maestro.html';
+                window.location.href = './ebooks/conquistador.html';
             }
         }
         
